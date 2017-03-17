@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:text="御泥坊VIP商城"
+        android:textColor="#FFF"
+        android:textSize="20sp"
+        android:background="#f77573"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <com.handmark.pulltorefresh.library.PullToRefreshScrollView
+        android:id="@+id/home_pullto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/home_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+    </android.support.v4.view.ViewPager>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:id="@+id/ll"
+        android:orientation="horizontal">
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:weightSum="4">
+
+        <TextView
+            android:id="@+id/home_mrqd"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/meiriqiandao"
+            android:gravity="center"
+            android:text="每日签到" />
+
+        <TextView
+            android:id="@+id/home_jfsc"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/jifenshangcheng"
+            android:gravity="center"
+            android:text="积分商城" />
+
+        <TextView
+            android:id="@+id/home_dhzq"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/duihuanzhuanqu"
+            android:gravity="center"
+            android:text="兑换专区" />
+
+        <TextView
+            android:id="@+id/home_zwcx"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/zhenweichaxun"
+            android:gravity="center"
+            android:text="真伪查询" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/cksysp"
+        android:text="查看所有商品"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+    </LinearLayout>
+    </com.handmark.pulltorefresh.library.PullToRefreshScrollView>
+</LinearLayout>

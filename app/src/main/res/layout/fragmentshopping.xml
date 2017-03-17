@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/gouwu"
+        android:text="购物车"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+    <com.handmark.pulltorefresh.library.PullToRefreshScrollView
+        android:layout_below="@+id/gouwu"
+        android:id="@+id/shopping_pullto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_below="@+id/gouwu"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+   <ImageView
+       android:layout_marginTop="100sp"
+       android:layout_gravity="center"
+       android:src="@drawable/shopping_trolley_empty"
+       android:layout_width="200sp"
+       android:layout_height="200sp" />
+
+        <Button
+            android:id="@+id/gyg"
+            android:text="逛一逛"
+            android:textSize="27sp"
+            android:background="#f07273"
+            android:layout_gravity="center"
+            android:layout_width="200sp"
+            android:layout_height="35sp" />
+    </LinearLayout>
+    </com.handmark.pulltorefresh.library.PullToRefreshScrollView>
+</RelativeLayout>

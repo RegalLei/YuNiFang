@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+     <include layout="@layout/sou"/>
+     <com.handmark.pulltorefresh.library.PullToRefreshScrollView
+         android:id="@+id/classify_pullto"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent">
+          <LinearLayout
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+
+     <TextView
+         android:id="@+id/spfl"
+         android:text="商品分类"
+         android:textSize="17dp"
+         android:textColor="#000"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content" />
+     <LinearLayout
+         android:weightSum="3"
+         android:layout_width="match_parent"
+         android:layout_height="80dp">
+
+          <ImageView
+              android:id="@+id/agx"
+              android:layout_weight="1"
+              android:src="@drawable/efficacy"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent" />
+
+          <ImageView
+              android:id="@+id/asx"
+              android:layout_weight="1"
+              android:src="@drawable/eshuxing"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent" />
+
+          <ImageView
+              android:id="@+id/afz"
+              android:layout_weight="1"
+              android:src="@drawable/skin"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent" />
+     </LinearLayout>
+     <TextView
+         android:id="@+id/rmfl"
+         android:text="热门分类"
+         android:textSize="17dp"
+         android:textColor="#000"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content" />
+
+     <LinearLayout
+         android:weightSum="3"
+         android:layout_width="match_parent"
+         android:layout_height="40dp">
+
+          <TextView
+              android:id="@+id/bsbs"
+              android:layout_weight="1"
+              android:text="补水保湿"
+              android:gravity="center"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent" />
+
+          <TextView
+              android:id="@+id/mbtl"
+              android:layout_weight="1"
+              android:text="美白提亮"
+              android:gravity="center"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent" />
+
+          <TextView
+              android:id="@+id/shtz"
+              android:layout_weight="1"
+              android:text="实惠套装"
+              android:gravity="center"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent" />
+     </LinearLayout>
+     <LinearLayout
+         android:weightSum="3"
+         android:layout_width="match_parent"
+         android:layout_height="40dp">
+
+          <TextView
+              android:id="@+id/tsmm"
+              android:layout_weight="1"
+              android:text="贴式面膜"
+              android:gravity="center"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent" />
+
+          <TextView
+              android:id="@+id/kyqd"
+              android:layout_weight="1"
+              android:text="控油祛痘"
+              android:gravity="center"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent" />
+
+          <TextView
+              android:id="@+id/jmr"
+              android:layout_weight="1"
+              android:text="洁面乳"
+              android:gravity="center"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent" />
+     </LinearLayout>
+     <TextView
+         android:id="@+id/rxsp"
+         android:text="热销商品"
+         android:textSize="17dp"
+         android:textColor="#000"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content" />
+     <GridView
+         android:id="@+id/classify_gridview"
+         android:numColumns="2"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent">
+     </GridView>
+          </LinearLayout>
+     </com.handmark.pulltorefresh.library.PullToRefreshScrollView>
+</LinearLayout>

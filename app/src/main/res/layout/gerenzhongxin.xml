@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/colorwhit"
+    android:layout_height="50dp">
+
+    <TextView
+        android:layout_weight="1"
+        android:text="个人中心"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textColor="#000"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <ImageView
+        android:src="@drawable/settings_pressed"
+        android:layout_width="30dp"
+        android:layout_height="match_parent" />
+</LinearLayout>
